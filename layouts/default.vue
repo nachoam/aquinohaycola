@@ -15,9 +15,8 @@
       </v-list>
 		</v-navigation-drawer>
 		<v-app-bar dark app clipped-left color="white" height="55px" >
-
       <v-img  contain src="logo.png"  max-width="50" class="logo ml-n1 mb-1 mr-4" @click.stop="drawer = !drawer"/>
-      <span style="color:black" >Aquí no hay cola </span>
+      <span style="color:black" >Aquí no hay cola</span>
 			<v-spacer/>
 			<!--blue-user-menu /-->
 		</v-app-bar>
@@ -26,8 +25,8 @@
 				<nuxt/>
 			</v-container>
 		</v-main>
-		<v-footer app fixed color="primary" height="25px" class="justify-center pa-0">
-			<span style="color:#FFF;font-size:0.8em">* NovaHack {{ new Date().getFullYear() }} - Kyber </span>
+		<v-footer app fixed color="#db4c56" height="25px" class="justify-center pa-0">
+			<span style="color:#FFF;font-size:0.8em">* Oa6 by IBM - {{ new Date().getFullYear() }}</span>
 		</v-footer>
 	</v-app>
 </template>

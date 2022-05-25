@@ -2,6 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   target: 'static',
+  ssr:false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - oa6 by IBM',
@@ -25,7 +26,7 @@ export default {
   css: [
   ],
   router: {
-    middleware: ['authenticated']
+    base: '/aquinohaycola/'
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: "~/plugins/google-maps", ssr: true },

@@ -12,7 +12,10 @@ export default {
 		current:null,
 		comerceIcon:null,
 		userIcon:null,
-		currentIcon:null
+		currentIcon:null,
+    level_1:null,
+    level_2:null,
+    level_3:null
 	}),
 	watch:{
 		current_x(value){
@@ -46,14 +49,14 @@ export default {
 		let percent = 0.4
 		var CommerceIcon = L.Icon.extend({
 			options: {
-				iconUrl:'/comerce_icon.png',
+				iconUrl:'comerce_icon.png',
 				iconSize:     [140 * percent, 176 * percent]
 			}
 		});
 		//139 x 173
 		var UserIcon = L.Icon.extend({
 			options: {
-				iconUrl:'/user_icon.png',
+				iconUrl:'user_icon.png',
 				iconSize:     [139 * percent, 173 * percent]
 			}
 		});
@@ -61,10 +64,34 @@ export default {
 		//139 x 173
 		var CurrentIcon = L.Icon.extend({
 			options: {
-				iconUrl:'/current_icon.png',
-				iconSize:     [139 * percent, 173 * percent]
+				iconUrl:'current.png',
+				iconSize:     [80 * percent, 101 * percent]
 			}
 		});
+
+    var Level1 = L.Icon.extend({
+      options: {
+        iconUrl:'level_1_icon.png',
+        iconSize:     [133 * percent, 131 * percent]
+      }
+    });
+
+    var Level2 = L.Icon.extend({
+      options: {
+        iconUrl:'level_2_icon.png',
+        iconSize:     [133 * percent, 131 * percent]
+      }
+    });
+
+    var Level3 = L.Icon.extend({
+      options: {
+        iconUrl:'level_3_icon.png',
+        iconSize:     [133 * percent, 131 * percent]
+      }
+    });
+    this.level_1 = new Level1();
+    this.level_2 = new Level2();
+    this.level_3 = new Level3();
 
 		this.comerceIcon = new CommerceIcon();
 		this.userIcon = new UserIcon();
@@ -95,8 +122,12 @@ export default {
 		reloadItems(items){
 			items.forEach(item => {
 				//			{id:1,type:'COMERCIO',coordinates:[40.323232, -3,312323]},
-				let instance_marker = L.marker(item.coordinates, {icon: item.type === 'establecimiento' ? this.comerceIcon : this.userIcon}).addTo(this.mymap);
+				//let instance_marker = L.marker(item.coordinates, {icon: item.type === 'establecimiento' ? this.comerceIcon : this.userIcon}).addTo(this.mymap);
+        let instance_marker = L.marker(item.coordinates, {icon: item.type === '1' ? this.level_1 : item.type === '2' ? this.level_2 :this.level_3 })
+          .addTo(this.mymap)
+          .bindPopup(`<span style="font-weight: bold;font-size: 15px;">${item.name}</span><br/><br/><span>${item.time}</span>`);
 				instance_marker.on("click",  (event) => {
+          instance_marker.openPopup();
 					this.$emit('click_item',item)
 				});
 			})
