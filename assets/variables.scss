@@ -1,0 +1,284 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+.blueTitle {
+    letter-spacing: 0.89px;
+    color: #384554;
+    font-family: "Evolutio", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .blue_sub_title{
+    letter-spacing: 0.89px;
+    color: #384554;
+    font-family: "Evolutio", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .evo-card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09) ;
+    background-color: white;
+  }
+  
+  .evo_text_header_app {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    color: #66FCF1;
+  }
+  
+  .evo_text_header_normal_app {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    color: #66FCF1;
+  }
+  
+  .evo_global_titles {
+    color: #384554;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  
+  .evo_name_title {
+    color: #384554;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  .evo_card_titles {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    color: #8DA2AE;
+  }
+  
+  
+  .evo_name_values{
+    color: #384554;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .evo_name_values:hover{
+    color:#1E9FB0;
+    cursor:pointer;
+  }
+  
+  
+  .v-label{
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    color: #384554;
+  }
+  
+  //DATA TABLE
+  
+  .v-list-header {
+    pointer-events: auto;
+    outline: 0;
+    font-family: "Evolutio",sans-serif;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-spacing: 0px 0px;
+    box-sizing: border-box;
+    padding: 0px 2px;
+  }
+  
+  .v-list-item-even{
+    background: #FFFFFF;
+    font-family: "Evolutio", sans-serif;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  
+  .v-list-item-odd{
+    background: #F6F8F9;
+    font-family: "Evolutio", sans-serif;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: normal
+  }
+  .v-data-table-header th {
+    pointer-events: auto;
+    cursor: pointer;
+    outline: 0;
+    font-family: "Evolutio",sans-serif;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8da2ae;
+  }
+  
+  
+  .v-data-table tbody td{
+    border: none !important;
+    padding: 10px 0px 10px 20px !important;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #384554;
+  }
+  .customsort tbody td:first-child{
+    padding: 10px 0px 10px 5px !important;
+  }
+  .v-data-table tbody tr:nth-child(even) {background: none}
+  .v-data-table tbody tr:nth-child(odd) {background: #F6F8F9}
+  
+  .v-data-table__selected{
+    background-color: #C2FEF9 !important;
+  }
+  
+  .list_link{
+    color: #384554;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .list_link:hover{
+    color:#1E9FB0;
+    cursor:pointer;
+  }
+  
+  
+  .v-breadcrumbs__item{
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.89px;
+    color: #999999 !important;
+  }
+  
+  .active_breadcrumb{
+    color: var(--charcoal-grey) !important;
+  }
+  
+  .v-breadcrumbs li:nth-child(even){
+    padding: 0px !important;
+  }
+  
+  .theme--light.v-list-item--active:hover::before,
+  .theme--light.v-list-item--active::before {
+    opacity: 0.30;
+    background: #1badbd;
+  }
+  
+  .theme--light.v-treeview .v-treeview-node__root.v-treeview-node--active:hover::before,
+  .theme--light.v-treeview .v-treeview-node__root.v-treeview-node--active::before {
+    opacity: 1;
+    border-left: 0.5rem solid #1E9FB0;
+    background-color: rgba(56, 69, 84, 0.20)
+  }
+  
+  .oulined_button_bkg{
+    background: #FFF !important;
+  }
+  
+  .error_text{
+    color:#EC6579
+  }
+  
+  .evo_tab_vertical{
+  
+  }
+  .evo_tab_vertical .v-tab{
+    padding: 0px 0px;
+  
+  }
+  .evo_tab_vertical .v-tabs-slider-wrapper{
+    width: 10px !important;
+  }
+  
+  .evo_tab  .v-tabs-slider {
+    background-color: #009688;
+    height: 200%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .evo_tab .v-tabs-slider-wrapper{
+    height: 4px !important;
+  }
+  .evo_tab .v-tab {
+    text-transform: none !important;
+    font-size: 18px;
+    ont-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+  
+  
+  .v-tabs-slider {
+    background-color: #009688;
+    height: 100%;
+    width: 49%;
+    margin-left: 36%;
+  }
+  
+  .mwx-400 {
+    max-width: 400px;
+  }
+  
+  .v-dialog{
+  }
+  @import '~vuetify/src/styles/styles.sass';
