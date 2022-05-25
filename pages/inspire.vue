@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid class="ma-0 pa-0 pl-1" >
+  <v-container fluid class="ma-0 pa-0 pl-1" style="height: 100%">
     <KyberMap mapId="current" :items="items"  @click_item="click_item"
-              :current_x="current_x" :current_y="current_y" style="height: 90vh; width:100%;"/>
+              :current_x="current_x" :current_y="current_y" style="height: 100%; width:100%;"/>
   </v-container>
 
 </template>
